@@ -1,0 +1,80 @@
+# Lektion 1 - Introduktion till Python
+===============================
+
+VAD HANDLAR LEKTIONEN OM?
+------------------------
+Detta är din första introduktion till programmeringsspråket Python. Du lär dig grunderna
+i hur man skriver enkla program och hur Python fungerar.
+
+HUVUDKONCEPT:
+------------
+1. Print-funktionen
+   - Hur man skriver ut text på skärmen
+   - print("Hello World!")
+
+2. Variabler
+   - Hur man lagrar information
+   - namn = "Anna"
+   - ålder = 25
+
+3. Datatyper
+   - Text (strings): "Hej"
+   - Heltal (integers): 42
+   - Decimaltal (floats): 3.14
+   - Sant/Falskt (booleans): True/False
+
+4. Grundläggande Operationer
+   - Plus: +
+   - Minus: -
+   - Gånger: *
+   - Delat med: /
+
+5. Texthantering (Strings)
+   - Längd av text: len("text")
+   - Stora bokstäver: "text".upper()
+   - Små bokstäver: "text".lower()
+
+6. Input från användaren
+   - name = input("Vad heter du? ")
+
+PRAKTISKA EXEMPEL:
+----------------
+```python
+# Skriva ut text
+print("Hej världen!")
+
+# Använda variabler
+namn = "Erik"
+ålder = 25
+print(f"Jag heter {namn} och är {ålder} år gammal")
+
+# Matematik
+tal1 = 10
+tal2 = 5
+summa = tal1 + tal2
+print(f"{tal1} plus {tal2} är {summa}")
+
+# Input från användaren
+favorit_färg = input("Vilken är din favoritfärg? ")
+print(f"Din favoritfärg är {favorit_färg}")
+```
+
+VANLIGA MISSTAG ATT UNDVIKA:
+--------------------------
+1. Glömma citattecken runt text
+2. Glömma parenteser vid print()
+3. Stavfel i variabelnamn
+4. Använda svenska bokstäver (å,ä,ö) i variabelnamn
+
+TIPS FÖR ATT LYCKAS:
+------------------
+1. Kör koden ofta för att testa
+2. Läs felmeddelanden noga
+3. Var noga med indenteringen
+4. Kommentera din kod med #
+
+ÖVNINGAR ATT PROVA:
+-----------------
+1. Skriv ett program som frågar efter ditt namn och ålder
+2. Gör en miniräknare som adderar två tal
+3. Skapa en presentation av dig själv med flera print()
