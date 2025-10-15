@@ -1,80 +1,70 @@
-# Lektion 1 - Introduktion till Python
-===============================
+# Lektion 2 - Listor och Loopar i Python
+===================================
 
 VAD HANDLAR LEKTIONEN OM?
 ------------------------
-Detta är din första introduktion till programmeringsspråket Python. Du lär dig grunderna
-i hur man skriver enkla program och hur Python fungerar.
+I denna lektion lär du dig om listor (arrays) och hur man kan upprepa kod med hjälp
+av loopar. Detta är grundläggande koncept som används mycket i programmering.
 
 HUVUDKONCEPT:
 ------------
-1. Print-funktionen
-   - Hur man skriver ut text på skärmen
-   - print("Hello World!")
+1. Listor
+   - En samling av värden
+   - Exempel: hundar = ["bob", "woff", "sten"]
+   - Kan innehålla olika typer av data
 
-2. Variabler
-   - Hur man lagrar information
-   - namn = "Anna"
-   - ålder = 25
+2. For-loopar
+   - Upprepar kod för varje element i en lista
+   - Två huvudsätt att använda for-loopar:
+     a) För varje element: for hund in hundar
+     b) Med range: for i in range(3)
 
-3. Datatyper
-   - Text (strings): "Hej"
-   - Heltal (integers): 42
-   - Decimaltal (floats): 3.14
-   - Sant/Falskt (booleans): True/False
+3. Range-funktionen
+   - Skapar en sekvens av nummer
+   - range(3) ger [0,1,2]
+   - Används ofta i loopar
 
-4. Grundläggande Operationer
-   - Plus: +
-   - Minus: -
-   - Gånger: *
-   - Delat med: /
-
-5. Texthantering (Strings)
-   - Längd av text: len("text")
-   - Stora bokstäver: "text".upper()
-   - Små bokstäver: "text".lower()
-
-6. Input från användaren
-   - name = input("Vad heter du? ")
+4. Lista-metoder
+   - append(): Lägger till element i slutet
+   - len(): Får längden på listan
+   - Åtkomst med index: lista[0]
 
 PRAKTISKA EXEMPEL:
 ----------------
 ```python
-# Skriva ut text
-print("Hej världen!")
+# Lista med for-loop
+hundar = ["bob", "woff", "sten"]
+for hund in hundar:
+    print(hund + " är en hund")
 
-# Använda variabler
-namn = "Erik"
-ålder = 25
-print(f"Jag heter {namn} och är {ålder} år gammal")
+# Användning av range
+for i in range(3):
+    print("Hello")
+    print(i)
 
-# Matematik
-tal1 = 10
-tal2 = 5
-summa = tal1 + tal2
-print(f"{tal1} plus {tal2} är {summa}")
-
-# Input från användaren
-favorit_färg = input("Vilken är din favoritfärg? ")
-print(f"Din favoritfärg är {favorit_färg}")
+# Lägga till i lista
+nummer_lista = [7, 3, 25]
+nummer_lista.append(543)
+print(nummer_lista)
 ```
 
 VANLIGA MISSTAG ATT UNDVIKA:
 --------------------------
-1. Glömma citattecken runt text
-2. Glömma parenteser vid print()
-3. Stavfel i variabelnamn
-4. Använda svenska bokstäver (å,ä,ö) i variabelnamn
+1. Glömma kolon efter for-loop
+2. Fel indentering i loopen
+3. Försöka nå index som inte finns
+4. Glömma att lista börjar på index 0
 
 TIPS FÖR ATT LYCKAS:
 ------------------
-1. Kör koden ofta för att testa
-2. Läs felmeddelanden noga
-3. Var noga med indenteringen
-4. Kommentera din kod med #
+1. Rita upp vad som händer i loopen
+2. Testa med små listor först
+3. Använd print() för att se vad som händer
+4. Var försiktig med att ändra listan i loopen
 
 ÖVNINGAR ATT PROVA:
 -----------------
-1. Skriv ett program som frågar efter ditt namn och ålder
-2. Gör en miniräknare som adderar två tal
-3. Skapa en presentation av dig själv med flera print()
+1. Skapa en lista med dina favoritsaker
+2. Skriv en loop som skriver ut varje sak
+3. Gör en loop som räknar från 1 till 10
+4. Skapa en lista och lägg till element med append()
